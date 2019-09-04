@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Loe Me ?</title>
+</head>
+<body>
+<h1 style="position: relative;left: 200px;top: 200px;">Do You Love Me?</h1>
+<input type="button" value="YES" onclick="yesclick()" style="position: relative;left: 250px;top: 200px;">
+<input id="haha" type="button" value="NO" onmouseover="andi()" style="position: relative;left: 270px;top:200px">
+</body>
+<script>
+    function yesclick() {
+        document.write('Me Too');
+    }
+    function andi() {
+        let x = Math.round(Math.random()*window.innerWidth);
+        let y = Math.round(Math.random()*window.innerHeight);
+        document.getElementById('haha').style.left= x +'px'
+        document.getElementById('haha').style.top= y = 'px'
+    }
+</script>
+</html>
