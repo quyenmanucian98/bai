@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng</title>
+</head>
+<body>
+Nhập Số Sản Phẩm Bán Được: <input id="hoahong" type="text"/>
+<button type="button" onclick="tinh()">Tính</button>
+<div id="phantram"/>
+<script>
+    function tinh() {
+        let soluong = document.getElementById('hoahong').value;
+        if(soluong < 200){
+            document.getElementById('phantram').innerText= "Được hưởng 5% hoa hồng"
+        }else if(soluong >= 200 && soluong <400 ){
+            document.getElementById('phantram').innerText= "Được hưởng 10%"
+        }
+    }
+</script>
+</body>
+</html>

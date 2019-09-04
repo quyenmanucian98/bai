@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuổi vào lớp 10</title>
+</head>
+<body>
+Sổ tuổi của học sinh: <input id="tuoi" type="text"/>
+<button type="button" onclick="kiemtra()">Kiểm Tra</button>
+<script>
+    function kiemtra() {
+        let tuoi1 = document.getElementById('tuoi').value;
+        if (tuoi1 < 15){
+            document.write(' Không đủ điều kiện');
+        }else {
+            document.write(' đủ điều kiện');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số >0 or <0</title>
+</head>
+<body>
+<input id="so" type="text"/>
+<button type="button" onclick="kiemtra()">Kiểm Tra</button>
+<script>
+    function kiemtra() {
+        let num1 = document.getElementById('so').value;
+        if (num1 >0){
+            document.write(num1+ ' Lớn hơn 0')
+        }else {
+            document.write(num1+ ' Nhỏ hơn 0')
+        }
+    }
+</script>
+</body>
+</html>

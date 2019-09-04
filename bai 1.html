@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra a vs b</title>
+</head>
+<body>
+Số thứ nhất: <input type="text" id="mot"/>
+Số thứ hai : <input type="text" id="hai"/>
+<button type="button" onclick="kiemtra()">Kiểm Tra</button>
+<script>
+    function kiemtra() {
+        let num1 = document.getElementById('mot').value;
+        let num2= document.getElementById('hai').value;
+        if (num1%num2==0){
+            document.write(num1+ ' chia hết cho ' + num2);
+        }else {
+            document.write(num1+ ' không chia hết cho ' +num2);
+        }
+    }
+</script>
+</body>
+</html>

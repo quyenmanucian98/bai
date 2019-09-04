@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+Điểm thi giữa kỳ: <input id="mot" type="text"/><br>
+Điểm thi cuối kỳ: <input id="hai" type="text"/><br>
+<button type="button" onclick="tinh()">Tính</button>
+<input id="ketqua" type="text" disabled>
+<div id="xephang"/>
+<script>
+  function tinh() {
+      let diemgiuaky = +document.getElementById('mot').value;
+      let diemcuoiky = +document.getElementById('hai').value;
+      let ketqua = (diemcuoiky + diemgiuaky)/2;
+      document.getElementById('ketqua').value= ketqua;
+      if(ketqua <= 5){
+          document.getElementById('xephang').innerText="Xếp Hạng Yếu"
+      }else if(ketqua > 5 && ketqua <= 7){
+          document.getElementById('xephang').innerText= " Xếp Hạng Khá"
+       }else if(ketqua > 7 && ketqua <= 8.5){
+          document.getElementById('xephang').innerText= "Xếp Hạng Giỏi"
+      }else {
+          document.getElementById('xephang').innerText= "Xếp Hạng Xuất Sắc"
+      }
+  }
+
+</script>
+</body>
+</html>
